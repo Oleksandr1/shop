@@ -1,0 +1,115 @@
+{% extends 'shop/base.html' %}
+{% load  static staticfiles %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static "css/good.css" %}">
+{% endblock extra_css %}
+
+{% block body %}
+
+        <!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Категория №1</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+        <div class="section">
+	    	<div class="container">
+	    		<div class="row">
+	    			<!-- Product Image & Available Colors -->
+	    			<div class="col-sm-6">
+	    				<div class="product-image-large">
+	    					<img src="{% static "pic/22.jpg" %}" alt="Item Name">
+	    				</div>
+	    			</div>
+	    			<!-- End Product Image & Available Colors -->
+	    			<!-- Product Summary & Options -->
+	    			<div class="col-sm-6 product-details">
+	    				<h4>Название №1</h4>
+	    				<div class="price">
+							<span class="price-was">958.99 &#8372</span> $999.99 &#8372
+						</div>
+					<p>
+	    					Краткое описание товара. Краткое описание товара. Краткое описание товара. Краткое описание товара. Краткое описание товара. Краткое описание товара.
+	    				</p>
+						<table class="shop-item-selections">
+							<!-- Color Selector -->
+							<!-- Size Selector -->
+							<tr>
+								<td><b>Фасовка:</b></td>
+								<td>
+									<div class="dropdown">
+										<a class="btn btn-sm btn-grey" data-toggle="dropdown" href="#">5 гр. <b class="caret"></b></a>
+										<ul class="dropdown-menu" role="menu">
+											<li role="menuitem"><a href="#">10 гр.</a></li>
+											<li role="menuitem"><a href="#">50 гр.</a></li>
+											<li role="menuitem"><a href="#">100 гр.</a></li>
+											<li role="menuitem"><a href="#">1 кг.</a></li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<!-- Quantity -->
+							<tr>
+								<td><b>Количество:</b></td>
+								<td>
+									<input type="text" class="form-control input-sm input-micro" value="1">
+								</td>
+							</tr>
+							<!-- Add to Cart Button -->
+							<tr>
+								<td>&nbsp;</td>
+								<td>
+									<a href="#" class="btn btn"><i class="icon-shopping-cart icon-white"></i>В корзину</a>
+								</td>
+							</tr>
+						</table>
+	    			</div>
+	    			<!-- End Product Summary & Options -->
+	    			
+	    			<!-- Full Description & Specification -->
+	    			<div class="col-sm-12">
+	    				<div class="tabbable">
+	    					<!-- Tabs -->
+							<ul class="nav nav-tabs product-details-nav">
+								<li class="active"><a href="#tab1" data-toggle="tab">Описание</a></li>
+								
+							</ul>
+							<!-- Tab Content (Full Description) -->
+							<div class="tab-content product-detail-info">
+								<div class="tab-pane active" id="tab1">
+									<h4>Описание:</h4>
+									<p>
+										Очень детальное описание всех волшебных и восхитительных свойствах данного продукта.
+									</p>
+									<h4>Все достоиства:</h4>
+									<ul>
+										<li>Все лечит.</li>
+										<li>Всех лечит</li>
+										<li>Улушает погоду</li>
+										<li>много-много полезного</li>
+										
+									</ul>
+									<h4>полезная информация</h4>
+									<p>
+										 Полезно полезно  Полезно полезно Полезно полезно Полезно полезно Полезно 
+										 полезно Полезно полезно
+									</p>
+								</div>
+								
+							</div>
+						</div>
+	    			</div>
+	    			<!-- End Full Description & Specification -->
+	    		</div>
+			</div>
+		</div>
+
+
+
+{% endblock body %}

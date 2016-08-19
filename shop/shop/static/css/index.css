@@ -1,0 +1,46 @@
+.carousel-indicators li{
+	background-color: green;
+}
+.carousel-indicators .active{
+	background-color: green;
+}
+.carousel-caption{
+	float: top;
+	color: green;
+}
+.btn{
+	background: #89F278;
+	border: none;
+}
+.carousel-control{
+	opacity: 0.3;
+	color: green;	
+}
+.carousel-control:hover{
+	opacity: 0.3;
+	color: green;
+}
+.thumbnail{
+	background-color: #F9FF85;
+}
+.my_thumb{
+	margin: 0px 0;
+	background-color: #89F278;
+}
+.old_price{
+	text-decoration: line-through;
+	color: red;
+	font-size:  18px;
+}
+.good_price{
+	color: green;
+	font-size: 25px;
+}
+.discont_label{
+	background-color: #f0ad4e;
+	border: 1px;
+	color: #E60003;
+}
+
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+{% load static from staticfiles %}
+<html lang="rus" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="" value="Интернет магазина чая">
+  <meta name="author" content="">
+
+  <title>Интернет-мазагин "Чаинка"</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" type= "text/css" href="{% static 'css/font.css' %} ">
+  <link rel="stylesheet" type= "text/css" href="{% static 'css/media.css' %} ">
+  {% block extra_css %}
+
+  {% endblock extra_css %}
+</head>
+
+<body>
+<div class="top_header">
+  <div class="navbar">
+    <div class="container" id="header">
+    <!-- BUTTON-->
+    <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#head_navbar" aria-expanded="false" aria-controls="navbar">
+                <i class="fa fa-bars"></i>
+          </button>
+          
+        </div>
+      <!-- END BUTTON-->
+      <div class="navbar-collapse collapse" id="head_navbar">
+      <ul class="nav navbar-nav">
+                  <li>
+                    <a href="{% url "home" %}" id="logo"><i class="fa fa-leaf fa-4x"></i></a>
+                  </li>
+                  <li class='my_li dropdown'>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="goods">Товары<span class="caret"></span></a>
+                     <ul class="dropdown-menu " role="menu">
+                            <li><a href="{% url "cat_1" %}">Категория товаров №1</a></li>
+                              <li class="divider"></li>
+                            <li><a href="#">Категория товаров №2</a></li>
+                              <li class="divider"></li>
+                            <li><a href="#">Категория товаров №3</a></li>
+                              <li class="divider"></li>
+                            <li><a href="#">Категория товаров №4</a></li>
+                              <li class="divider"></li>
+                            <li><a href="#">Категория товаров №5</a></li>
+                              <li class="divider"></li>
+                            <li><a href="#">Категория товаров №6</a></li>
+                     </ul>
+                  </li>
+                  <li class='my_li'>
+                    <a href="#" id="delivery"><i class="fa fa-truck"></i>Доставка</a>
+                  </li>
+                  <li class='my_li'>
+                    <a href="{% url "contacts" %}" id="contacts">Контакты</a>
+                  </li>
+                </ul>
+              <ul class="nav navbar-nav navbar-right">
+              <li>
+                <p>+38-050-958-51-02 <br> +38-050-958-51-02 <br> +38-050-958-51-02 </p>                           
+              </li>
+                <li>
+                  <a href="#" id="login"><i class="fa fa-sign-in fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="{% url "shop_card" %}" id="basket"><i class="fa fa-shopping-basket fa-2x"></i><span class="badge">4</span></a>
+                </li>
+              </ul>
+      </div>
+    </div>
+              <p id="head_name">Интернет-магазин "Чаинка"</p>
+  </div>
+</div>
+<div class="empty_line"></div>
+
+{% block body %}{% endblock body %}
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+{% block extra_js %}{% endblock extra_js%}
+
+</body>
+
+<footer>
+  <div class="empty_line"></div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-footer col-md-4 col-sm-6">
+          <h3>Навигация</h3>
+          <ul class="no-list-style footer-navigate-section">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Товары</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+
+        <div class="col-footer col-md-5 col-sm-6">
+          <h3>Контакты</h3>
+          <p class="contact-us-details">
+            <b>Адрес:</b>г.Северодонецк, ул. Гагарина 99/3 <br>
+            <b>Телефон:</b>+38-050-958-51-02 <br>  
+            <b>Skype:</b>sanya071186 <br>
+            <b>Email:</b>sanya071186@gmail.com <br>
+          </p>
+        </div>
+        <div class="col-footer col-md-3 col-sm-6">
+          <h3>Связь с нами:</h3>
+          <ul class="no-list-style footer-stay-connected">
+            <li class="fb"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+            <li class="tw"><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+            <li class="vk"><a href=""><i class="fa fa-vk fa-2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+</html>
